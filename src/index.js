@@ -33,7 +33,7 @@ fastify.get('/user/:id', (request, reply) => {
   const {id} = request.params;
 
   if (!users[id]) {
-    return reply.status(400).send('user not exist');
+    return reply.status(400).send('User not exist');
   }
   return reply.send(users[id]);
 });
